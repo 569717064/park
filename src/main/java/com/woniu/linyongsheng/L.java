@@ -1,4 +1,4 @@
-package com.woniu.a;
+package com.woniu.linyongsheng;
 
 public class L {
 	public static void main(String[] args) {
