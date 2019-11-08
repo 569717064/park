@@ -43,7 +43,7 @@ public class ShiroConfig {
 		HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
 		credentialsMatcher.setHashAlgorithmName("md5");//设置加密算法
 		credentialsMatcher.setHashIterations(1024);//设置加密迭代次数
-		return credentialsMatcher;
+		return credentialsMatcher; 
 	}
 	
 	
