@@ -3,7 +3,11 @@ Implementation-Title: park
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: yanlei
 Implementation-Vendor-Id: com.woniuxy
+<<<<<<< HEAD
 Build-Jdk: 1.8.0_201
+=======
+Build-Jdk: 1.8.0_92
+>>>>>>> branch 'master' of git@github.com:569717064/park.git
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/park
 Created-By: Maven Integration for Eclipse
