@@ -7,6 +7,8 @@ public class Parkplace implements Serializable {
 
     private Integer parkNum;
 
+    private String photo;
+
     private String property;
 
     private Double hourprice;
@@ -35,6 +37,14 @@ public class Parkplace implements Serializable {
 
     public void setParkNum(Integer parkNum) {
         this.parkNum = parkNum;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo == null ? null : photo.trim();
     }
 
     public String getProperty() {
