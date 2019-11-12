@@ -22,6 +22,7 @@ public class RootConfig implements WebMvcConfigurer{
 		registry.addMapping("/**")
 			.allowedOrigins("*")
 			.allowedMethods("GET","DELETE","POST","PUT","OPTIONS")
-			.allowedHeaders("*");
+			.allowedHeaders("*")
+			.allowCredentials(true);//允许客户端携带cookie
 	}
 }
