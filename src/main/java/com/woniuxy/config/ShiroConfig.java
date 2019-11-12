@@ -101,7 +101,7 @@ public class ShiroConfig {
 		Map<String, String> map = new HashedMap();
 		map.put("/login", "anon");
 		map.put("/logout", "anon");
-		map.put("/islogin", "anon");
+		map.put("/isLogin", "anon");
 		
 		map.put("/**", "authc");
 		

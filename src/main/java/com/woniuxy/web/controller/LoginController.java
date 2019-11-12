@@ -16,34 +16,32 @@ import com.woniuxy.domain.Users;
 @RestController
 @RequestMapping
 public class LoginController {
-	
+
 	@RequestMapping("/login")
 	public void login(@RequestBody Users user) {
-		
 		Subject subject = SecurityUtils.getSubject();
-		
-		
-		
-		UsernamePasswordToken token =new UsernamePasswordToken(user.getUsername(),user.getPassword());
-		
+
+		UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getPassword());
+
 		subject.login(token);
-		
-		
+
 	}
-	@RequestMapping("islogin")
-	public Map<String,Object> islogin() {
+
+	@RequestMapping("/isLogin")
+	public Map<String, Object> isLogin() {
 		Subject subject = SecurityUtils.getSubject();
 		Map map = new HashMap<>();
-		
-		map.put("islogin", subject.isAuthenticated());
+
+		map.put("isLogin", subject.isAuthenticated());
+
 		return map;
 	}
-	
+
 	@RequestMapping("/logout")
 	public void logout() {
+
 		Subject subject = SecurityUtils.getSubject();
 		subject.logout();
 	}
-	 
-	
+
 }
