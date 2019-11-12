@@ -32,7 +32,7 @@ public class ShiroConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/park");
 		dataSource.setUsername("root");
-		dataSource.setPassword("root");
+		dataSource.setPassword("123");
 		return dataSource;
 	}
 	
@@ -99,7 +99,12 @@ public class ShiroConfig {
 		//设置认证成功，但是没有对应角色和权限的跳转页面
 //		shiroFilter.setUnauthorizedUrl("");
 		Map<String, String> map = new HashedMap();
-		map.put("/**", "anon");
+		map.put("/login", "anon");
+		map.put("/logout", "anon");
+		map.put("/islogin", "anon");
+		
+		map.put("/**", "authc");
+		
 		shiroFilter.setFilterChainDefinitionMap(map);//设置权限
 		return shiroFilter;
 	}  
