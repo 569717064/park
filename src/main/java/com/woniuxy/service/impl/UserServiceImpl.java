@@ -49,7 +49,7 @@ public class UserServiceImpl implements IUsersService{
 	/**
 	 * 注册判断账号是否存在
 	 */
-	@Transactional(readOnly = true)
+	@Transactional
 	@Override
 	public boolean isExist(String username) {
 		Users users = usersMapper.selectUsername(username);

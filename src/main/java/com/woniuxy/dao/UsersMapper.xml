@@ -301,7 +301,7 @@
   
   <!--根据用户名查找Users表 用于注册判断账户是否重复  -->
 <select id="selectUsername" parameterType="java.lang.String" resultType="com.woniuxy.domain.Users">
-	select * from users where username=#{username},
+	select * from users where username=#{username}
 </select>
   
   

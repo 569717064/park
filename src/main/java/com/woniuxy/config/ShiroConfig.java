@@ -32,7 +32,7 @@ public class ShiroConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/park");
 		dataSource.setUsername("root");
-		dataSource.setPassword("123");
+		dataSource.setPassword("123456");
 		return dataSource;
 	}
 	
@@ -102,7 +102,7 @@ public class ShiroConfig {
 		map.put("/login", "anon");
 		map.put("/logout", "anon");
 		map.put("/isLogin", "anon");
-		
+		map.put("/users/register", "anon");
 		map.put("/**", "authc");
 		
 		shiroFilter.setFilterChainDefinitionMap(map);//设置权限
