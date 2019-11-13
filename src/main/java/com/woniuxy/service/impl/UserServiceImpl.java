@@ -46,5 +46,17 @@ public class UserServiceImpl implements IUsersService{
 	public List<Users> findAll() {
 		return usersMapper.selectByExample(null);
 	}
+	/**
+	 * 注册判断账号是否存在
+	 */
+	@Transactional
+	@Override
+	public boolean isExist(String username) {
+		Users users = usersMapper.selectUsername(username);
+		if(users == null) {
+			return false;
+		}
+		return true;
+	}
 
 }

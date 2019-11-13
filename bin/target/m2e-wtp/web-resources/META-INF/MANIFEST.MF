@@ -9,12 +9,18 @@ Built-By: 56971
 Implementation-Vendor-Id: com.woniuxy
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
 Build-Jdk: 1.8.0_201
 =======
 Build-Jdk: 1.8.0_92
+<<<<<<< HEAD
+=======
 >>>>>>> branch 'master' of git@github.com:569717064/park.git
 =======
 Build-Jdk: 1.8.0_211
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
 >>>>>>> branch 'dev' of git@github.com:569717064/park.git
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/park
