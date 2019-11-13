@@ -287,4 +287,24 @@
       rid = #{rid,jdbcType=INTEGER}
     where uid = #{uid,jdbcType=INTEGER}
   </update>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--根据用户名查找Users表 用于注册判断账户是否重复  -->
+<select id="selectUsername" parameterType="java.lang.String" resultType="com.woniuxy.domain.Users">
+	select * from users where username=#{username}
+</select>
+  
+  
+  
+  
 </mapper>

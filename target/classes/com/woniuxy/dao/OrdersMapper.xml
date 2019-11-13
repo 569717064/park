@@ -273,7 +273,7 @@
   
   
   
-  
+  <select id="ordersFindAllByUid" parameterType="" resultMap="rm" ></select>
   
   
   

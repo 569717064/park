@@ -273,9 +273,10 @@
   
   
   
-  
-  
-  
+  <select id="ordersFindAllByUid" parameterType="int">
+  		SELECT * FROM orders 
+		WHERE uid = #{uid}
+  </select>
   
   
 </mapper>

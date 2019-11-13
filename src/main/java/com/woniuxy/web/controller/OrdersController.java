@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -38,7 +39,15 @@ public class OrdersController {
 	
 	@GetMapping
 	public List<Orders> findAll(){
-		List<Orders> ordersList = ordersServiceImpl.findAll();
-		return ordersList;
+		List<Orders> orders = ordersServiceImpl.findAll();
+		return orders;
 	}
+	
+	
+	@GetMapping("{uid}")
+	public List<Orders> ordersList(@PathVariable Integer uid ){
+		List<Orders> orders = ordersServiceImpl.findAll();
+		return orders;
+	}
+	
 }
