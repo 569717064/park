@@ -32,11 +32,7 @@ public class ShiroConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/park");
 		dataSource.setUsername("root");
-<<<<<<< HEAD
 		dataSource.setPassword("root");
-=======
-		dataSource.setPassword("123456");
->>>>>>> branch 'dev' of git@github.com:569717064/park.git
 		return dataSource;
 	}
 	
