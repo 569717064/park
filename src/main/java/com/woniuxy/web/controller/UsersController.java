@@ -42,6 +42,12 @@ public class UsersController {
 		return null;
 	}
 	
+	@GetMapping("{uid}")
+	public Users findOne(@RequestBody Integer uid) {
+		Users users = usersServiceImpl.findOne(uid);
+		return users;
+	}
+	
 	/**
 	 * 注册
 	 * @return

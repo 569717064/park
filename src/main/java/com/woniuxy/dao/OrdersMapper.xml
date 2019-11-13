@@ -273,7 +273,7 @@
   
   
   
-  <select id="ordersFindAllByUid" parameterType="int">
+  <select id="ordersFindAllByUid" parameterType="java.lang.int">
   		SELECT * FROM orders 
 		WHERE uid = #{uid}
   </select>

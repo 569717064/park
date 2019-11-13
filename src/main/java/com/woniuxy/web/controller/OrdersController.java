@@ -46,7 +46,7 @@ public class OrdersController {
 	
 	@GetMapping("{uid}")
 	public List<Orders> ordersList(@PathVariable Integer uid ){
-		List<Orders> orders = ordersServiceImpl.findAll();
+		List<Orders> orders = ordersServiceImpl.ordersFindAllByUid(uid);
 		return orders;
 	}
 	
