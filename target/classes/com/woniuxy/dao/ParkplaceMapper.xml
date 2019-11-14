@@ -272,7 +272,7 @@
       uid = #{uid,jdbcType=INTEGER}
     where ppid = #{ppid,jdbcType=INTEGER}
   </update>
-<<<<<<< HEAD
+
   
   
   
@@ -295,6 +295,5 @@
 		FROM parkplace
 		WHERE ppid=#{ppid}
 	</select>
-=======
->>>>>>> branch 'dev' of git@github.com:569717064/park.git
+
 </mapper>
