@@ -1,2 +1,11 @@
 server:
   port: 8888
+  
+logging:
+  level:
+    com: 
+      woniu: 
+        mapper: debug 
+        
+mybatis:
+  config-location: classpath:mybatisConfig.xml
