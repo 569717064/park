@@ -104,4 +104,11 @@ public class Users implements Serializable {
     public void setRid(Integer rid) {
         this.rid = rid;
     }
+
+	@Override
+	public String toString() {
+		return "Users [uid=" + uid + ", username=" + username + ", password=" + password + ", salt=" + salt + ", phone="
+				+ phone + ", email=" + email + ", photo=" + photo + ", carNum=" + carNum + ", money=" + money + "]";
+	}
+    
 }

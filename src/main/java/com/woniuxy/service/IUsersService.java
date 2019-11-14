@@ -10,4 +10,6 @@ public interface IUsersService {
 	void update(Users users);
 	Users findOne(Integer uid);
 	List<Users> findAll();
+	//判断注册账号是否存在
+	boolean isExist(String username);
 }

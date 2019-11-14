@@ -21,7 +21,8 @@ public class RootConfig implements WebMvcConfigurer{
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
 			.allowedOrigins("*")
-			.allowedMethods("GET","DELETE","POST","PUT","OPTIONS")
-			.allowedHeaders("*");
+			.allowedMethods("*")
+			.allowedHeaders("*")
+			.allowCredentials(true);//允许客户端携带cookie
 	}
 }

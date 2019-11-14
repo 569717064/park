@@ -27,4 +27,7 @@ public interface UsersMapper {
     int updateByPrimaryKeySelective(Users record);
 
     int updateByPrimaryKey(Users record);
+    
+    //根据username列查找返回一个Users 对象，用与注册
+    Users selectUsername(String username);
 }

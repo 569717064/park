@@ -99,7 +99,12 @@ public class ShiroConfig {
 		//设置认证成功，但是没有对应角色和权限的跳转页面
 //		shiroFilter.setUnauthorizedUrl("");
 		Map<String, String> map = new HashedMap();
-		map.put("/**", "anon");
+		map.put("/login", "anon");
+		map.put("/logout", "anon");
+		map.put("/isLogin", "anon");
+		map.put("/users/register", "anon");
+		map.put("/**", "authc");
+		
 		shiroFilter.setFilterChainDefinitionMap(map);//设置权限
 		return shiroFilter;
 	}  

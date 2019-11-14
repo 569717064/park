@@ -1,9 +1,35 @@
 Manifest-Version: 1.0
 Implementation-Title: park
 Implementation-Version: 0.0.1-SNAPSHOT
+<<<<<<< HEAD
 Built-By: 56971
+=======
+<<<<<<< HEAD
+Built-By: yanlei
+=======
+Built-By: 56971
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
 Implementation-Vendor-Id: com.woniuxy
+<<<<<<< HEAD
 Build-Jdk: 1.8.0_211
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
+Build-Jdk: 1.8.0_201
+=======
+Build-Jdk: 1.8.0_92
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of git@github.com:569717064/park.git
+=======
+Build-Jdk: 1.8.0_211
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/park
 Created-By: Maven Integration for Eclipse

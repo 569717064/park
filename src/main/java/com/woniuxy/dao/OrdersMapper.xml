@@ -278,6 +278,7 @@
   
   
   
+<<<<<<< HEAD
   
   
   
@@ -292,4 +293,6 @@
   		SELECT uuid,oid,ppid,status
         FROM orders where uid=#{uid}
   </select>
+=======
+>>>>>>> branch 'dev' of git@github.com:569717064/park.git
 </mapper>

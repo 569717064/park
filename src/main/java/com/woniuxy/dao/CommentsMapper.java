@@ -4,6 +4,7 @@ import com.woniuxy.domain.Comments;
 import com.woniuxy.domain.CommentsExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.session.RowBounds;
 
 public interface CommentsMapper {
     long countByExample(CommentsExample example);
