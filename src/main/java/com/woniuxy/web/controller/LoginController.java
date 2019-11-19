@@ -20,9 +20,7 @@ public class LoginController {
 	@RequestMapping("/login")
 	public void login(@RequestBody Users user) {
 		Subject subject = SecurityUtils.getSubject();
-
 		UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getPassword());
-
 		subject.login(token);
 
 	}

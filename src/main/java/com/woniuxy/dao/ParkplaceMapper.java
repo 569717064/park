@@ -1,5 +1,6 @@
 package com.woniuxy.dao;
 
+import com.woniuxy.domain.Orders;
 import com.woniuxy.domain.Parkplace;
 import com.woniuxy.domain.ParkplaceExample;
 import java.util.List;
@@ -27,4 +28,11 @@ public interface ParkplaceMapper {
     int updateByPrimaryKeySelective(Parkplace record);
 
     int updateByPrimaryKey(Parkplace record);
+    
+    
+    
+    
+    
+    Parkplace findsome(Integer ppid);
+
 }

@@ -10,4 +10,5 @@ public interface IOrdersService {
 	void update(Orders orders);
 	Orders findOne(Integer oid);
 	List<Orders> findAll();
+	List<Orders> findsome(Integer uid);
 }

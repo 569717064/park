@@ -278,4 +278,20 @@
   
   
   
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <select id="findsome" parameterType="java.lang.Integer" resultType="com.woniuxy.domain.Orders">
+  		SELECT uuid,oid,ppid,status
+        FROM orders where uid=#{uid}
+  </select>
+
 </mapper>
