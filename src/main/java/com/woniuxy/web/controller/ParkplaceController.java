@@ -42,6 +42,10 @@ public class ParkplaceController {
 	}
 	
 	
+	
+	
+	
+	
 	@GetMapping(value="/{ppid}")
 	public Parkplace findsome(@PathVariable Integer ppid){
 		System.out.println(ParkplaceServiceImpl.findsome(1));
