@@ -10,4 +10,5 @@ public interface IParkplaceService {
 	void update(Parkplace parkplace);
 	Parkplace findOne(Integer ppid);
 	List<Parkplace> findAll();
+	Parkplace findsome(Integer ppid);
 }

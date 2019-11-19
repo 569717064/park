@@ -6,6 +6,7 @@ import org.apache.shiro.crypto.hash.SimpleHash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,19 +28,31 @@ public class UsersController {
 		
 	}
 	
-	@DeleteMapping
-	public void delete() {
-		
+	@DeleteMapping("{uid}")
+	public void delete(@PathVariable Integer uid) {
+		usersServiceImpl.delete(uid);
 	}
 	
 	@PutMapping
-	public void update() {
-		
+	public void update(@RequestBody Users users) {
+		usersServiceImpl.update(users);
 	}
 	
 	@GetMapping
 	public List<Users> findAll(){
-		return null;
+		List<Users> list = usersServiceImpl.findAll();
+		return list;
+	}
+	
+	/**
+	 * 根据UId查看自己的信息
+	 * @param uid
+	 * @return
+	 */
+	@GetMapping("{uid}")
+	public Users findOne(@RequestBody Integer uid) {
+		Users users = usersServiceImpl.findOne(uid);
+		return users;
 	}
 	
 	/**

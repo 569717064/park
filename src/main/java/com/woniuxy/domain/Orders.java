@@ -23,8 +23,9 @@ public class Orders implements Serializable {
     private Integer uuid;
 
     private static final long serialVersionUID = 1L;
+    
 
-    public Integer getOid() {
+	public Integer getOid() {
         return oid;
     }
 
@@ -95,4 +96,12 @@ public class Orders implements Serializable {
     public void setUuid(Integer uuid) {
         this.uuid = uuid;
     }
+
+	@Override
+	public String toString() {
+		return "Orders [oid=" + oid + ", uid=" + uid + ", ppid=" + ppid + ", datetime=" + datetime + ", startTime="
+				+ startTime + ", endTime=" + endTime + ", price=" + price + ", status=" + status + ", uuid=" + uuid
+				+ "]";
+	}
+    
 }
