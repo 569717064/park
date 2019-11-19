@@ -27,8 +27,8 @@ public class OrdersController {
 		ordersServiceImpl.save(orders);
 	}
 	
-	@DeleteMapping
-	public void delete(Integer oid) {
+	@DeleteMapping("{oid}")
+	public void delete(@PathVariable Integer oid) {
 		ordersServiceImpl.delete(oid);
 	}
 	
