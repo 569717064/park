@@ -55,4 +55,9 @@ public class OrdersController {
 		return orders;
 	}
 	
+	
+	@GetMapping(value="/{uid}")
+	public List<Orders> findsome(@PathVariable Integer uid){
+		return ordersServiceImpl.findsome(uid);
+	}
 }

@@ -53,5 +53,12 @@ public class OrdersServiceImpl implements IOrdersService {
 	public List<Orders> ordersFindAllByUid(Integer uid) {
 		return ordersMapper.ordersFindAllByUid(uid);
 	}
+	
+	@Transactional(readOnly = true)
+	@Override
+	public List<Orders> findsome(Integer uid) {
+		// TODO Auto-generated method stub
+		return ordersMapper.findsome(uid);
+	}
 
 }

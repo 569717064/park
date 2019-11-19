@@ -45,5 +45,13 @@ public class ParkplaceServiceImpl implements IParkplaceService {
 	public List<Parkplace> findAll() {
 		return parkplaceMapper.selectByExample(null);
 	}
+	
+	
+	@Transactional(readOnly = true)
+	@Override
+	public Parkplace findsome(Integer ppid) {
+		// TODO Auto-generated method stub
+		return parkplaceMapper.findsome(ppid);
+	}
 
 }

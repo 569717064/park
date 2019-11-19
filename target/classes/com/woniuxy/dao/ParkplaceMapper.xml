@@ -272,4 +272,28 @@
       uid = #{uid,jdbcType=INTEGER}
     where ppid = #{ppid,jdbcType=INTEGER}
   </update>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	<select id="findsome" parameterType="java.lang.Integer" resultType="com.woniuxy.domain.Parkplace">
+		SELECT photo
+		FROM parkplace
+		WHERE ppid=#{ppid}
+	</select>
+
 </mapper>

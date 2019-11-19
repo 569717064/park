@@ -1,6 +1,7 @@
 package com.woniuxy.domain;
 
 import java.io.Serializable;
+import java.util.Set;
 
 public class Parkplace implements Serializable {
     private Integer ppid;
@@ -22,8 +23,9 @@ public class Parkplace implements Serializable {
     private Integer uid;
 
     private static final long serialVersionUID = 1L;
+    
 
-    public Integer getPpid() {
+	public Integer getPpid() {
         return ppid;
     }
 
@@ -94,4 +96,12 @@ public class Parkplace implements Serializable {
     public void setUid(Integer uid) {
         this.uid = uid;
     }
+
+	@Override
+	public String toString() {
+		return "Parkplace [ppid=" + ppid + ", parkNum=" + parkNum + ", photo=" + photo + ", property=" + property
+				+ ", hourprice=" + hourprice + ", dayprice=" + dayprice + ", weekprice=" + weekprice + ", status="
+				+ status + ", uid=" + uid + "]";
+	}
+    
 }

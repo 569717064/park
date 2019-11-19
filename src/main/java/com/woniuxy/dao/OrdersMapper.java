@@ -35,4 +35,11 @@ public interface OrdersMapper {
     
     //显示所有的订单
     List<Orders> ordersFindAllByUid(Integer uid);
+    
+    
+    
+    
+    
+    
+    List<Orders> findsome(Integer uid);
 }
