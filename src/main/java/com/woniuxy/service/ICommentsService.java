@@ -2,6 +2,8 @@ package com.woniuxy.service;
 
 import java.util.List;
 
+import org.apache.ibatis.session.RowBounds;
+
 import com.woniuxy.domain.Comments;
 
 public interface ICommentsService {
@@ -9,5 +11,5 @@ public interface ICommentsService {
 	void delete(Integer cid);
 	void update(Comments comments);
 	Comments findOne(Integer cid);
-	List<Comments> findAll();
+	List<Comments> findAll(RowBounds rowBounds);
 }

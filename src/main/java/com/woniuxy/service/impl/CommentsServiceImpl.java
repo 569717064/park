@@ -2,6 +2,7 @@ package com.woniuxy.service.impl;
 
 import java.util.List;
 
+import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,8 +43,8 @@ public class CommentsServiceImpl implements ICommentsService {
 
 	@Transactional(readOnly = true)
 	@Override
-	public List<Comments> findAll() {
-		return commentsMapper.selectByExample(null);
+	public List<Comments> findAll(RowBounds rowBounds) {
+		return commentsMapper.selectByExample(null,rowBounds);
 	}
 
 }

@@ -44,4 +44,10 @@ public class Comments implements Serializable {
     public void setUid(Integer uid) {
         this.uid = uid;
     }
+
+	@Override
+	public String toString() {
+		return "Comments [cid=" + cid + ", info=" + info + ", status=" + status + ", uid=" + uid + "]";
+	}
+    
 }

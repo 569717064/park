@@ -2,6 +2,8 @@ package com.woniuxy.web.controller;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +22,7 @@ public class OrdersController {
 
 	@Autowired
 	private IOrdersService ordersServiceImpl;
+	
 	
 	@PostMapping
 	public void save(@RequestBody Orders orders) {
@@ -41,4 +44,5 @@ public class OrdersController {
 		List<Orders> ordersList = ordersServiceImpl.findAll();
 		return ordersList;
 	}
+	
 }

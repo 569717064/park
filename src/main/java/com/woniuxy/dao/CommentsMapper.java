@@ -17,7 +17,7 @@ public interface CommentsMapper {
 
     int insertSelective(Comments record);
 
-    List<Comments> selectByExample(CommentsExample example);
+    List<Comments> selectByExample(CommentsExample example,RowBounds rowBounds);
 
     Comments selectByPrimaryKey(Integer cid);
 
