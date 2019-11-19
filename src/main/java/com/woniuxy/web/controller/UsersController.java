@@ -42,6 +42,11 @@ public class UsersController {
 		return null;
 	}
 	
+	/**
+	 * 根据UId查看自己的信息
+	 * @param uid
+	 * @return
+	 */
 	@GetMapping("{uid}")
 	public Users findOne(@RequestBody Integer uid) {
 		Users users = usersServiceImpl.findOne(uid);

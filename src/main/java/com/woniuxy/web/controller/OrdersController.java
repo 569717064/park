@@ -44,6 +44,11 @@ public class OrdersController {
 	}
 	
 	
+	/**
+	 * 根据Id获得表单
+	 * @param uid
+	 * @return
+	 */
 	@GetMapping("{uid}")
 	public List<Orders> ordersList(@PathVariable Integer uid ){
 		List<Orders> orders = ordersServiceImpl.ordersFindAllByUid(uid);
