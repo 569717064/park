@@ -273,17 +273,12 @@
   
   
   
-  <select id="ordersFindAllByUid" parameterType="java.lang.int">
+  <select id="ordersFindAllByUid" parameterType="java.lang.Integer">
   		SELECT * FROM orders 
 		WHERE uid = #{uid}
   </select>
   
   
   
-  
-  <select id="findsome" parameterType="java.lang.Integer" resultType="com.woniuxy.domain.Orders">
-  		SELECT uuid,oid,ppid,status
-        FROM orders where uid=#{uid}
-  </select>
 
 </mapper>

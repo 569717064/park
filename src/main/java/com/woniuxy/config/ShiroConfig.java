@@ -1,7 +1,6 @@
 package com.woniuxy.config;
 
 import java.util.Map;
-import java.util.Properties;
 
 import org.apache.commons.collections.map.HashedMap;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
@@ -12,7 +11,6 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
@@ -32,7 +30,7 @@ public class ShiroConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/park");
 		dataSource.setUsername("root");
-		dataSource.setPassword("admin");
+		dataSource.setPassword("root");
 		return dataSource;
 	}
 	

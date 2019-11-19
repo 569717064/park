@@ -41,5 +41,4 @@ public interface OrdersMapper {
     
     
     
-    List<Orders> findsome(Integer uid);
 }

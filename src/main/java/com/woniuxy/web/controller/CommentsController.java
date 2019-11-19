@@ -26,7 +26,7 @@ public class CommentsController {
 	
 	@PostMapping
 	public void save(@RequestBody Comments comments) {
-		System.out.println("CommentsController.save()"+comments);
+		commentsServiceImpl.save(comments);
 	}
 	
 	@DeleteMapping

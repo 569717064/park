@@ -59,9 +59,5 @@ public class OrdersController {
 	}
 	
 	
-	@GetMapping(value="/{uid}")
-	public List<Orders> findsome(@PathVariable Integer uid){
-		return ordersServiceImpl.findsome(uid);
-	}
 	
 }
